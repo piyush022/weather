@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Amatic SC', cursive;
+}
+html {
+  background: url(/m2.jpg) rgba(0, 0, 0, 0.644);
+  object-fit: cover;
+  background-blend-mode: multiply;
+  background-repeat: repeat;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.cont {
+  width: 100%;
+  height: 100vh;
+}
+.textfield {
+  width: 15rem;
+  padding: 5px;
+  padding-left: 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(231, 233, 235, 0.295);
+  height: 40px;
+  margin-right: 15px;
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+
+.textfield:focus {
+  outline: none;
+}
+.textfield::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: aliceblue;
+  /* Firefox */
+}
+.box {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  width: 8rem;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(231, 233, 235, 0.295);
+  color: aliceblue;
+  font-size: 1.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.507) 0px 8px 16px -8px;
+}
+
+.button:hover,
+.button2:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.button2 {
+  margin-left: 1rem;
+  width: 3rem;
+  height: 47px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(231, 233, 235, 0.295);
+  color: aliceblue;
+  font-size: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card {
+  padding: 5rem;
+  text-align: center;
+}
+h6 {
+  color: aliceblue;
+  font-weight: 200;
+  font-size: 2rem;
+  margin: 20px;
+}
+h5 {
+  color: rgb(223, 167, 14);
+  font-weight: 200;
+  font-size: 2rem;
+  margin: 20px;
+  transition: 0.4s;
+  margin-bottom: 2rem;
+}
+h5:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.sky {
+  border-radius: 10px;
+  border-left: solid 5px rgb(223, 167, 14);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 20rem;
+  padding: 5px;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+h3 {
+  color: aliceblue;
+  font-weight: 300;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+h3:hover {
+  transform: scale(1.2);
+}
+.cord {
+  margin-top: 50px;
+}
+.box3 {
+  background-color: rgba(0, 0, 0, 0.74);
+  padding: 5px;
+  border-radius: 80px;
+}
+.cityy {
+  font-size: 3rem;
+  font-weight: 600;
+  display: inline;
+  background: linear-gradient(to right, rgb(223, 167, 14), rgb(223, 167, 14)),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+}
+
+.cityy:hover {
+  background-size: 0 3px, 100% 3px;
+}
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.msg {
+  display: flex;
+  flex-direction: column;
+}
+
+.msg p {
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.459);
+  line-height: 1.6;
+  padding: 5rem;
+  margin-top: 40px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+  text-transform: uppercase;
+}
+
+.msg h2 {
+  margin-top: 2rem;
+  font-family: 'Amatic SC', cursive;
+  color: #fff;
+  font-weight: 200;
+  font-size: 2.5rem;
+}
+
+.validation {
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-left: 15px;
+  color: #fff;
+}
+
+.dataerror {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.dataerror p {
+  background-color: rgba(0, 0, 0, 0.459);
+  padding: 1rem;
+  color: rgb(223, 167, 14);
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  html {
+    background: url(/6.jpg) rgba(0, 0, 0, 0.507);
+    object-fit: contain;
+    background-blend-mode: multiply;
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+  }
+
+  h5 {
+    color: rgb(223, 167, 14);
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 20px;
+    transition: 0.4s;
+    margin-bottom: 2rem;
+  }
+  h5:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  h6 {
+    color: aliceblue;
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 20px;
+    transition: 0.4s;
+  }
+  .sky {
+    border-radius: 10px;
+    border-left: solid 5px rgb(223, 167, 14);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 15rem;
+    padding: 5px;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    transition: 0.4s;
+  }
+
+  .cityy {
+    font-size: 1.7rem;
+    font-weight: 400;
+    display: inline;
+    background: linear-gradient(to right, rgb(223, 167, 14), rgb(223, 167, 14)),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+      );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+  }
+
+  .msg p {
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.459);
+    line-height: 1.6;
+    padding: 5rem;
+    margin-top: 40px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+    text-transform: uppercase;
+  }
+
+  .msg h2 {
+    margin-top: 2rem;
+    font-family: 'Amatic SC', cursive;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .button2 {
+    margin-left: 1rem;
+    width: 2.5rem;
+    height: 39px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(231, 233, 235, 0.295);
+    color: aliceblue;
+    font-size: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  html {
+    background: url(/4.jpg) rgba(0, 0, 0, 0.726);
+    object-fit: contain;
+    background-blend-mode: multiply;
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+  }
+  .footer {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer h4 {
+    color: rgb(223, 167, 14);
+    font-size: 0.5rem;
+  }
+
+  .msg p {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.74);
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 1rem;
+    margin-top: 40px;
+    line-height: 1.6;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+    transition: 0.4s;
+  }
+  .textfield {
+    width: 10rem;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(231, 233, 235, 0.295);
+    height: 30px;
+    margin-right: 15px;
+    color: aliceblue;
+    font-size: 1rem;
+    transition: 0.4s;
+  }
+
+  .textfield:focus {
+    outline: none;
+  }
+  .textfield::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: aliceblue;
+
+    /* Firefox */
+  }
+  .button {
+    width: 6rem;
+    height: 39px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(231, 233, 235, 0.295);
+    color: aliceblue;
+    font-size: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.521) 0px 8px 16px -8px;
+    transition: 0.4s;
+  }
+}
+
+.msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+}
